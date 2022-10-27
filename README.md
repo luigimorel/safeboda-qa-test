@@ -1,6 +1,11 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Have the following tools installed on your local machine:
+
+- A code editor
+- Java SDK
+- Java Extension Pack if you're using VS Code
+- Selenium and a Chrome Web Driver
 
 ## Folder Structure
 
@@ -11,7 +16,9 @@ The workspace contains two folders by default, where:
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Running the script
+
+To keep things simpler, I decided to work with a single file. This is due to presence of the documentation that's being followed.
 
 ## Dependency Management
 
