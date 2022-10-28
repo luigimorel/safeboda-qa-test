@@ -144,28 +144,20 @@ public class App {
         driver.findElement(By.xpath("(//button[@type='submit']//span)[3]")).click();
 
         /**
-         * 9. Verify quantity, size, color, and total cost of the product on pop-up
+         * 9. Verify quantity, size, color, and total cost of the product on pop-up and
+         * print to the console
          */
+        // Color and Size
         String colorAndSize = driver.findElement(By.cssSelector("span#layer_cart_product_attributes")).getText();
-        if (colorAndSize == null) {
-            System.out.println("The selected size and color do not exist");
-        } else {
-            System.out.println("Color and Size:" + colorAndSize);
-        }
+        System.out.println("Color and Size:" + colorAndSize);
 
+        // Quantity
         String quantityString = driver.findElement(By.cssSelector("span#layer_cart_product_quantity")).getText();
-        if (quantityString == null) {
-            System.out.println("The selected quantity do not exist");
-        } else {
-            System.out.println("Quantity is" + quantityString);
-        }
+        System.out.println("Quantity is" + quantityString);
 
+        // Total
         String totalString = driver.findElement(By.xpath("(//span[text()='$49.53'])[3]")).getText();
-        if (totalString == null) {
-            System.out.println("The total does not exist");
-        } else {
-            System.out.println("Total is" + totalString);
-        }
+        System.out.println("Total is" + totalString);
 
         /**
          * 10. Find out shipping cost
